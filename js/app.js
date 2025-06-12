@@ -298,14 +298,15 @@ function setupGameCardEvents() {
         card.addEventListener('click', () => {
             const gameUrl = card.dataset.gameUrl;
             const gameTitle = card.dataset.gameTitle;
-            openGame(gameUrl);
+            openGame(gameUrl, gameTitle);
         });
     });
 }
 
-function openGame(gameUrl) {
-    console.log('Opening game:', gameUrl);
-    // TODO: Implement game opening logic
+// Open game in new window/tab
+function openGame(gameUrl, gameTitle) {
+    console.log(`🎮 Opening game: ${gameTitle}`);
+    window.open(gameUrl, '_blank');
 }
 
 function selectCategoryByName(categoryName) {
@@ -357,7 +358,7 @@ function selectCategory(category, buttonElement) {
     currentCategory = category;
     
     // Update active button
-    document.querySelectorAll('.sidebar-item').forEach(btn => {
+    document.querySelectorAll('.category-item').forEach(btn => {
         btn.classList.remove('active');
     });
     
@@ -579,128 +580,15 @@ function createGameCard(game, isHorizontal = false) {
     
     return `
         <div class="game-card ${cardClass} bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg"
-             data-game-url="${game.gameUrl}" data-game-title="${game.title}">
+             data-game-url="${game.gameUrl}" data-game-title="${game.name}">
             <div class="aspect-w-16 aspect-h-9 bg-gray-200">
-                <img src="${imageUrl}" alt="${game.title}" 
+                <img src="${imageUrl}" alt="${game.name}" 
                      class="w-full h-32 object-cover" 
                      onerror="this.src='images/placeholder-game.svg'">
             </div>
             <div class="p-3">
-                <h3 class="font-medium text-gray-900 text-sm line-clamp-2 mb-1">${game.title}</h3>
-                <p class="text-xs text-gray-600 line-clamp-2 mb-2">${game.description || 'Fun game to play'}</p>
-                <div class="flex items-center justify-between">
-                    <div class="flex flex-wrap gap-1">
-                        ${game.categoriesArray ? game.categoriesArray.slice(0, 2).map(cat => 
-                            `<span class="px-2 py-1 bg-primary bg-opacity-10 text-primary text-xs rounded-full">${cat}</span>`
-                        ).join('') : ''}
-                    </div>
-                    <button class="text-primary hover:text-primary-dark transition-colors duration-200">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m2 4H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
-                    </button>
-                </div>
+                <h3 class="font-medium text-gray-900 text-sm line-clamp-2 mb-1">${game.name}</h3>
             </div>
         </div>
     `;
-}
-
-// Setup sidebar toggle for mobile
-function setupSidebarToggle() {
-    if (menuToggle) {
-        menuToggle.addEventListener('click', toggleSidebar);
-    }
-    
-    if (sidebarOverlay) {
-        sidebarOverlay.addEventListener('click', closeSidebar);
-    }
-    
-    // Handle escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && sidebar.classList.contains('translate-x-0')) {
-            closeSidebar();
-        }
-    });
-}
-
-// Toggle sidebar for mobile
-function toggleSidebar() {
-    if (sidebar.classList.contains('-translate-x-full')) {
-        openSidebar();
-    } else {
-        closeSidebar();
-    }
-}
-
-// Open sidebar for mobile
-function openSidebar() {
-    sidebar.classList.remove('-translate-x-full');
-    sidebar.classList.add('translate-x-0');
-    if (sidebarOverlay) sidebarOverlay.classList.remove('hidden');
-}
-
-// Close sidebar for mobile
-function closeSidebar() {
-    sidebar.classList.remove('translate-x-0');
-    sidebar.classList.add('-translate-x-full');
-    if (sidebarOverlay) sidebarOverlay.classList.add('hidden');
-}
-
-// Setup game card click events
-function setupGameCardEvents() {
-    const gameCards = document.querySelectorAll('.game-card');
-    gameCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const gameUrl = card.dataset.gameUrl;
-            const gameTitle = card.dataset.gameTitle;
-            if (gameUrl) {
-                openGame(gameUrl, gameTitle);
-            }
-        });
-    });
-}
-
-// Open game in new window/tab
-function openGame(gameUrl, gameTitle) {
-    console.log(`🎮 Opening game: ${gameTitle}`);
-    window.open(gameUrl, '_blank');
-}
-
-// Select category by name (used by category buttons)
-function selectCategoryByName(categoryName) {
-    const categoryButton = document.querySelector(`[data-category="${categoryName}"]`);
-    if (categoryButton) {
-        selectCategory(categoryName, categoryButton);
-    }
-}
-
-// Debounce function for search
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Utility functions
-function hideLoading() {
-    if (loadingState) loadingState.classList.add('hidden');
-}
-
-function showLoading() {
-    if (loadingState) loadingState.classList.remove('hidden');
-}
-
-function showNoResults() {
-    if (noResultsState) noResultsState.classList.remove('hidden');
-    if (gamesContainer) gamesContainer.classList.add('hidden');
-}
-
-function hideNoResults() {
-    if (noResultsState) noResultsState.classList.add('hidden');
 }
