@@ -1,0 +1,530 @@
+/* Custom CSS for FunnyGames */
+
+/* 顶部横条背景 */
+.top-header {
+    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* 主内容区域 */
+.main-content {
+    padding: 24px;
+    margin-top: 64px;
+    min-height: calc(100vh - 64px);
+    background: #f9fafb;
+}
+
+/* 搜索框样式 */
+.search-input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    padding-right: 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007AFF;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+/* 游戏卡片样式 */
+.game-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 16px;
+    }
+}
+
+/* 暗色模式 */
+@media (prefers-color-scheme: dark) {
+    .main-content {
+        background: #111827;
+    }
+    
+    .game-card {
+        background: #1f2937;
+    }
+}
+
+/* 加载动画 */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-spinner > div {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background-color: #007AFF;
+    border-radius: 100%;
+    display: inline-block;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-spinner > div:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loading-spinner > div:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% { 
+        transform: scale(0);
+    } 
+    40% { 
+        transform: scale(1.0);
+    }
+}
+
+/* 游戏网格布局 */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 24px;
+}
+
+/* 游戏卡片样式 */
+.game-card {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.game-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.game-card-content {
+    padding: 16px;
+}
+
+.game-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.game-description {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* 减少动画 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+/* Additional animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Game placeholder styles */
+.game-placeholder {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    animation: shimmer 2s infinite;
+}
+
+/* Sidebar animations */
+.sidebar-enter {
+    animation: slideInLeft 0.3s ease-out;
+}
+
+/* Category badge styles */
+.category-badge {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.category-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+/* Game frame styles */
+.game-frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Social share button effects */
+.share-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.share-btn:active {
+    transform: translateY(0);
+}
+
+/* Toast notification styles */
+.toast {
+    animation: slideInFromRight 0.3s ease-out;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Enhanced glass effects */
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Gradient text effect */
+.text-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-item .tooltip-hover {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .sidebar-item .tooltip-hover {
+        display: none;
+    }
+}
+
+.game-thumbnail {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.focus-visible {
+    outline: 2px solid #007AFF;
+    outline-offset: 2px;
+}
+
+@media print {
+    .sidebar,
+    .search-container,
+    .category-tabs {
+        display: none;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.category-section {
+    margin-bottom: 2rem;
+}
+
+.category-section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.interactive-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interactive-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-bounce:hover {
+    animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.games-horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.games-horizontal-scroll > * {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.games-horizontal-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.games-horizontal-scroll::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.games-horizontal-scroll::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.games-horizontal-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.game-card-horizontal {
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.reduced-gap {
+    gap: 0.75rem;
+}
+
+.minimal-padding {
+    padding: 0.5rem;
+}
+
+/* 移除不必要的样式，直接显示图标和名称 */
+.category-section {
+    padding: 1rem;
+}
+
+.sidebar-main-gap {
+    margin-left: 200px;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 64px; /* 顶部导航栏高度 */
+    bottom: 0;
+    background: white;
+    border-right: 1px solid #e5e7eb;
+    overflow-y: auto;
+    z-index: 40;
+}
+
+.category-item {
+    transition: all 0.2s ease;
+}
+
+.category-item:hover {
+    background-color: #f3f4f6;
+}
+
+.category-item.active {
+    background-color: #e5e7eb;
+    font-weight: 600;
+}
+
+/* 主内容区域调整 */
+.content-wrapper {
+    margin-left: 240px; /* 与侧边栏宽度相同 */
+    padding-left: 24px;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    .content-wrapper {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+/* 移除所有tooltip相关样式，直接显示内容 */
+.sidebar-item .tooltip-hover {
+    display: none !important;
+}
+
+/* 移除hover隐藏效果 */
+.sidebar-item .category-icon,
+.sidebar-item .category-name,
+.sidebar-item .category-count {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* 主内容区域背景 */
+#mainContent {
+    background: #F2F2F7 !important;
+} 

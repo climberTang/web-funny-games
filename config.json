@@ -1,0 +1,86 @@
+{
+  "site": {
+    "name": "FunnyGames",
+    "description": "Play thousands of free online games including action, puzzle, adventure, driving, casual and more.",
+    "url": "https://funnygames.com",
+    "language": "en",
+    "author": "FunnyGames Team"
+  },
+  "social": {
+    "twitter": "@FunnyGames",
+    "facebook": "FunnyGames",
+    "instagram": "funnygames_official"
+  },
+  "seo": {
+    "keywords": [
+      "free games",
+      "online games",
+      "action games",
+      "puzzle games",
+      "adventure games",
+      "casual games",
+      "browser games",
+      "HTML5 games"
+    ],
+    "google_analytics": "GA_MEASUREMENT_ID",
+    "google_site_verification": "your-verification-code"
+  },
+  "categories": [
+    {
+      "id": "action",
+      "name": "Action Games",
+      "description": "Fast-paced games full of excitement and adventure",
+      "color": "#FF3B30"
+    },
+    {
+      "id": "puzzle",
+      "name": "Puzzle Games", 
+      "description": "Challenge your mind with brain-teasing puzzles",
+      "color": "#AF52DE"
+    },
+    {
+      "id": "adventure",
+      "name": "Adventure Games",
+      "description": "Embark on epic journeys and explore new worlds",
+      "color": "#34C759"
+    },
+    {
+      "id": "casual",
+      "name": "Casual Games",
+      "description": "Easy to play games perfect for relaxation",
+      "color": "#007AFF"
+    },
+    {
+      "id": "driving",
+      "name": "Driving Games",
+      "description": "Race, drive, and cruise in exciting vehicles",
+      "color": "#FF9500"
+    },
+    {
+      "id": "sports",
+      "name": "Sports Games",
+      "description": "Experience the thrill of sports and competition",
+      "color": "#FF2D92"
+    }
+  ],
+  "features": {
+    "social_sharing": true,
+    "game_ratings": true,
+    "user_comments": false,
+    "favorites": true,
+    "search": true,
+    "categories": true,
+    "related_games": true
+  },
+  "performance": {
+    "lazy_loading": true,
+    "image_optimization": true,
+    "cache_duration": 3600,
+    "cdn_enabled": true
+  },
+  "api": {
+    "games_per_page": 20,
+    "max_related_games": 6,
+    "search_results_limit": 50
+  }
+} 

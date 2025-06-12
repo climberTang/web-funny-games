@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Test - FunnyGames</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Dynamic Categories Test</h1>
+        
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Available Categories:</h2>
+            <div id="categoriesList" class="space-y-2">
+                <!-- Categories will be populated here -->
+            </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow p-6">
+            <h2 class="text-xl font-semibold mb-4">Category Statistics:</h2>
+            <div id="categoryStats">
+                <!-- Stats will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/games-data.js"></script>
+    <script>
+        // Test the category generation logic
+        function testCategories() {
+            console.log('Testing category generation...');
+            
+            if (!window.GAMES_DATA || window.GAMES_DATA.length === 0) {
+                document.getElementById('categoriesList').innerHTML = '<p class="text-red-500">No games data found!</p>';
+                return;
+            }
+            
+            // Get all unique categories
+            const categoriesSet = new Set();
+            const categoryCounts = {};
+            
+            window.GAMES_DATA.forEach(game => {
+                if (game.categoriesArray && game.categoriesArray.length > 0) {
+                    game.categoriesArray.forEach(category => {
+                        categoriesSet.add(category);
+                        categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+                    });
+                }
+            });
+            
+            const categories = Array.from(categoriesSet).sort();
+            
+            // Display categories
+            const categoriesListEl = document.getElementById('categoriesList');
+            let categoriesHtml = '';
+            
+            categoriesHtml += `<div class="mb-4 p-3 bg-blue-50 rounded">
+                <span class="font-semibold">All Games</span>
+                <span class="ml-auto text-sm text-gray-600">(${window.GAMES_DATA.length} total)</span>
+            </div>`;
+            
+            categories.forEach(category => {
+                const count = categoryCounts[category] || 0;
+                categoriesHtml += `<div class="mb-2 p-3 bg-gray-50 rounded flex justify-between">
+                    <span class="font-medium">${category.charAt(0).toUpperCase() + category.slice(1)} Games</span>
+                    <span class="text-sm text-gray-600">${count} games</span>
+                </div>`;
+            });
+            
+            categoriesListEl.innerHTML = categoriesHtml;
+            
+            // Display stats
+            const statsEl = document.getElementById('categoryStats');
+            let statsHtml = `
+                <p><strong>Total Games:</strong> ${window.GAMES_DATA.length}</p>
+                <p><strong>Total Categories:</strong> ${categories.length}</p>
+                <p><strong>Categories Found:</strong> ${categories.join(', ')}</p>
+            `;
+            
+            statsEl.innerHTML = statsHtml;
+            
+            console.log('Categories:', categories);
+            console.log('Category counts:', categoryCounts);
+        }
+        
+        // Run test when page loads
+        document.addEventListener('DOMContentLoaded', testCategories);
+    </script>
+</body>
+</html> 

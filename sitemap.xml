@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://funnygames.com/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/action/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/adventure/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/beauty/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/clicker/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/driving/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/puzzle/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category Page -->
+  <url>
+    <loc>https://funnygames.com/games/sports/</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/action/crazy-office-slap-and-smash.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/piece-of-cake-merge-and-bake.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/doodle-road.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/action/zombie-horde-build-survive.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/crazy-dummy-swing-multiplayer.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/driving/boom-karts.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/bad-cat---granny-s-return.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/dalgona-candy-honeycomb-cookie-kam.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/snake-vs-block.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/color-music-hop-ball-games.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/empire-city.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/action/punchers.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/adventure/duo-kjn.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/daily-emoji-hunt.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/fork-n-sausage.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/action/zombie-space-episode-2-ajp.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/driving/derbycrash.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/pottery-master.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/adventure/firestone-idle-rpg.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/driving/city-car-driving-simulator-online.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/puzzle/diamant-match-3-sky-story.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/pretty-tidy.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/blob-opera.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/puzzle/image-crossword-far.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/animal-dna-run.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/adventure/exhibit-of-sorrows.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/action/cougar-simulator-big-cats.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/screamals.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/pencil-rush.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/layers-roll.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/scale-of-the-universe-2.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/happyville-merge-farm-gtu.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/obby-cards-the-legend-hunt.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/i-dont-even-know.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/beauty/knee-case-simulator.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/catch-tiles-piano-game.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/puzzle/stupidity-test.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/just-hit-the-button.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/dogs-vs-aliens.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/hydraulic-press-2d-asmr.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/merge-run.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Game Page -->
+  <url>
+    <loc>https://funnygames.com/games/casual/draw-line.html</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

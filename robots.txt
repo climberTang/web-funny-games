@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://funnygames.com/sitemap.xml
+
+# Popular pages
+Allow: /games/
+Allow: /games/action/
+Allow: /games/puzzle/
+Allow: /games/adventure/
+Allow: /games/casual/
+Allow: /games/driving/
+Allow: /games/sports/
+
+# Block if needed (uncomment if you have admin areas)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl delay (optional, for respectful crawling)
+Crawl-delay: 1
